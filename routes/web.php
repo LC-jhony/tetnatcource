@@ -1,14 +1,15 @@
 <?php
 
-use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProfileController;
+use App\Livewire\HomeLandlord;
+use App\Livewire\HomeTenant;
 use Illuminate\Support\Facades\Route;
-
 
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/category', [CategoryController::class, 'index'])->name('category.index');
+Route::get('landlord/home', HomeLandlord::class)->name('landlord.home');
+Route::get('tenant/home', HomeTenant::class)->name('tenant.home');
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

@@ -15,17 +15,14 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('category.index')" :active="request()->routeIs('category.index')">
-                        {{ __('category') }}
-                    </x-nav-link>
+
                 </div>
             </div>
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ms-6 gap-4">
                 <!-- Add this button right here -->
-                <button id="theme-toggle" type="button"
-                    class=" text-gray-500 dark:text-gray-400  dark:hover:bg-gray-700 
+                <button id="theme-toggle" type="button" class=" text-gray-500 dark:text-gray-400  dark:hover:bg-gray-700 
                    dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
                     <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
@@ -64,8 +61,7 @@
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
 
-                            <x-dropdown-link :href="route('logout')"
-                                onclick="event.preventDefault();
+                            <x-dropdown-link :href="route('logout')" onclick="event.preventDefault();
                                                 this.closest('form').submit();">
                                 {{ __('Log Out') }}
                             </x-dropdown-link>
@@ -114,8 +110,7 @@
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
 
-                    <x-responsive-nav-link :href="route('logout')"
-                        onclick="event.preventDefault();
+                    <x-responsive-nav-link :href="route('logout')" onclick="event.preventDefault();
                                         this.closest('form').submit();">
                         {{ __('Log Out') }}
                     </x-responsive-nav-link>

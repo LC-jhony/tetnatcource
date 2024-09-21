@@ -38,7 +38,7 @@
 @endphp
 <div>
     <{{ $href ? 'a' : 'button' }} {{ $href ? 'href=' . $href : 'type=' . $type }}
-        {{ $attributes->merge(['class' => "flex items-center gap-2 $buttonSizeClass text-white font-semibold $buttonColorClass rounded-md"]) }}>
+        {{ $attributes->merge(['class' => "flex justify-center gap-2 $buttonSizeClass text-white font-semibold $buttonColorClass rounded-md"]) }}>
 
         @if ($icon && $iconPosition === 'left')
             <x-dynamic-component :component="'heroicon-o-' . $icon" class="w-5 h-5" />

@@ -38,7 +38,7 @@ return [
     |
     */
 
-    'layout' => 'components.tenant.theme',
+    'layout' => 'layouts.tenant.theme',
     //'layout' => 'components.layouts.app',
 
     /*
@@ -157,6 +157,6 @@ return [
     |
     */
 
-    'pagination_theme' => 'bootstrap',
-    //'pagination_theme' => 'tailwind',
+    //'pagination_theme' => 'bootstrap',
+    'pagination_theme' => 'tailwind',
 ];
