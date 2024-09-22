@@ -10,12 +10,13 @@
 
 
     <!-- Scripts -->
+    @livewireStyles()
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body class="font-sans antialiased">
     <div
-        class="relative isolate flex min-h-svh w-full bg-gray-100 max-lg:flex-col lg:bg-zinc-100 dark:bg-zinc-900 dark:lg:bg-zinc-950">
+        class="relative isolate flex min-h-svh w-full bg max-lg:flex-col lg:bg-gray-50 dark:bg-zinc-900 dark:lg:bg-zinc-950">
 
         <div class="fixed inset-y-0 left-0 w-64 max-lg:hidden">
             <nav class="flex h-full min-h-0 flex-col">
@@ -138,7 +139,7 @@
 
 
     <!-- jQuery -->
-
+    @livewireScripts()
 </body>
 
 </html>

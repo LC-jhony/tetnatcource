@@ -1,10 +1,10 @@
 import './bootstrap';
 
-import Alpine from 'alpinejs';
+// import Alpine from 'alpinejs';
 
-window.Alpine = Alpine;
+// window.Alpine = Alpine;
 
-Alpine.start();
+// Alpine.start();
 
 // DARK MODE TOGGLE BUTTON
 var themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");
