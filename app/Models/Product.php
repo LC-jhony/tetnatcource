@@ -35,10 +35,10 @@ class Product extends Model
         );
     }
 
-    protected static function booted()
-    {
-        static::addGlobalScope('tenant', function ($builder) {
-            $builder->where('tenant_id', Auth::user()->tenant_id);
-        });
-    }
+    // protected static function booted()
+    // {
+    //     static::addGlobalScope('tenant', function ($builder) {
+    //         $builder->where('tenant_id', Auth::user()->tenant_id);
+    //     });
+    // }
 }

@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->enum('role', ['tenant', 'landlord'])->default('tenent');
+            $table->enum('role', ['tenant', 'landlord'])->default('tenant');
             $table->rememberToken();
             $table->timestamps();
             $table->foreign('tenant_id')->references('id')->on('tenants');

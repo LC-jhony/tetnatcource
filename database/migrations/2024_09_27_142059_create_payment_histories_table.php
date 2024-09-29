@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('stripe_id')->nullable();
             $table->text('payment_date')->nullable();
             $table->timestamps();
-            $table->foreign('tenant_id')->references('id')->on('');
+            $table->foreign('tenant_id')->references('id')->on('tenants');
         });
     }
 
